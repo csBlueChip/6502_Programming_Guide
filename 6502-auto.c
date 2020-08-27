@@ -302,8 +302,8 @@ void  setup (void)
 	op2i[OP_BCC_REL ] = (decode_t){"BCC", AM_REL , 2, 22, {FLG_NONE, FLG_NONE, FLG_NONE               }};
 	op2i[OP_BCS_REL ] = (decode_t){"BCS", AM_REL , 2, 22, {FLG_NONE, FLG_NONE, FLG_NONE               }};
 	op2i[OP_BEQ_REL ] = (decode_t){"BEQ", AM_REL , 2, 22, {FLG_NONE, FLG_NONE, FLG_NONE               }};
-	op2i[OP_BIT_ABS ] = (decode_t){"ROR", AM_ABS , 3,  4, {FLG_NONE, FLG_NONE, FLG_N|FLG_V|FLG_Z      }};
-	op2i[OP_BIT_ZP  ] = (decode_t){"ROR", AM_ZP  , 2,  3, {FLG_NONE, FLG_NONE, FLG_N|FLG_V|FLG_Z      }};
+	op2i[OP_BIT_ABS ] = (decode_t){"BIT", AM_ABS , 3,  4, {FLG_NONE, FLG_NONE, FLG_N|FLG_V|FLG_Z      }};
+	op2i[OP_BIT_ZP  ] = (decode_t){"BIT", AM_ZP  , 2,  3, {FLG_NONE, FLG_NONE, FLG_N|FLG_V|FLG_Z      }};
 	op2i[OP_BMI_REL ] = (decode_t){"BMI", AM_REL , 2, 22, {FLG_NONE, FLG_NONE, FLG_NONE               }};
 	op2i[OP_BNE_REL ] = (decode_t){"BNE", AM_REL , 2, 22, {FLG_NONE, FLG_NONE, FLG_NONE               }};
 	op2i[OP_BPL_REL ] = (decode_t){"BPL", AM_REL , 2, 22, {FLG_NONE, FLG_NONE, FLG_NONE               }};
